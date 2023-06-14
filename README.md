@@ -1,5 +1,5 @@
 # FileCrypter
-This programm encryps and decrypts a file or an entire folder.
+This programm encryps and decrypts a file or an entire folder with AES256.
 
 <b><font size=3>This program is distributed in the hope that it will be useful,
 but without any warranty for its implementation!</font></b>
