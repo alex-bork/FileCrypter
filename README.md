@@ -11,13 +11,13 @@ but without any warranty for its implementation!</font></b>
 In order to encrypt a file or folder use the follwing command syntax:
 
 ```cmd
-    FolderCrypter encrypt <filename|filepath> <password>
+    FolderCrypter.exe encrypt <filename|filepath> <password>
 ```
 
 For file decryption use:
 
 ```cmd
-    FolderCrypter ecrypt <filename.fcrypt|filepath.fcrypt> <password>
+    FolderCrypter.exe ecrypt <filename.fcrypt|filepath.fcrypt> <password>
 ```
 For decrypting a file the password must be the same as used for the encryption, otherwise the program ends with an error.
 
