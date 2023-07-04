@@ -8,18 +8,38 @@ but without any warranty for its implementation!</font></b>
 
 ## Usage
 ### <b>1. via Command Line</b>
-In order to encrypt a file or folder use the follwing command syntax:
+
+<br/>
+<u>Encryption</u>
+
+If the file to be encrypted is in the same folder as the FileCrypter is, than use:
 
 ```cmd
-    FolderCrypter.exe encrypt <filename|filepath> <password>
+    FileCrypter.exe encrypt <filename> <password> --local
 ```
-
-For file decryption use:
+or
 
 ```cmd
-    FolderCrypter.exe ecrypt <filename.fcrypt|filepath.fcrypt> <password>
+    FileCrypter.exe encrypt .\<filename> <password>
 ```
-For decrypting a file the password must be the same as used for the encryption, otherwise the program ends with an error.
+
+if not in the same folder, use the command as follows:
+
+```cmd
+    FileCrypter.exe encrypt <fullfilepath> <password>
+```
+
+<br/>
+<u>Decryption</u>
+
+For file decryption the rules are almost the same:
+
+```cmd
+    FileCrypter.exe decrypt <filename.fcrypt|fullfilepath.fcrypt> <password> (--local)
+```
+<b>Attention!</b> For decrypting a file the password must be the same as used for the encryption, otherwise the program ends with an error.
+
+<br/>
 
 ### <b>2. via GUI</b>
 \- is yet to be implemented \-
@@ -29,4 +49,8 @@ For decrypting a file the password must be the same as used for the encryption, 
 ## Versions
 
 ### 1.0.0
-Initial Verison
+- Initial Verison
+
+### 1.0.1
+- Readme corrected
+- Bugfix for --local parameter
